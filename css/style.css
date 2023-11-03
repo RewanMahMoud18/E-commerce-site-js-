@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Oswald', sans-serif;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+header{
+    background-color: #333;
+    padding: 10px 0;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-content .brand{
+    font-size: 32px;
+    text-decoration: none;
+    color: white;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul#userInfo{
+   display: none;
+    align-items: center;
+}
+nav ul#userInfo li {
+    position: relative;
+    margin: 0 7px;
+}
+nav ul#userInfo li i{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+nav ul#userInfo li .badge{
+width: 20px;
+height: 20px;
+background: #1c89dd;
+color: #fff;
+text-align: center;
+display: block;
+position: absolute;
+border-radius: 50%;
+top:-9px;
+right: -11px;
+font-size: 10px;
+line-height: 20px;
+display: none;
+}
+nav ul#userInfo .cartsProducts{
+    position: absolute;
+    width: 200px;
+    transform: translate(-42%,0);
+    background: #f6f0f0;
+    top: 46px;
+    padding: 10px;
+    border: 1px solid #1c89dd;
+    display: none;
+}
+nav ul#userInfo .cartsProducts a{
+    color: #fff;
+    display: block;
+    margin: 0;
+    padding: 0;
+    background: #1c89dd;
+    text-align: center;
+    padding: 6px;
+
+}
+
+nav li a{
+    display: block;
+    color: #fff;
+    min-width: 50px;
+    margin: 0 5px;
+    padding: 5px;
+    text-decoration: none;
+}
+/*==============form=============*/
+.section-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 36%;
+    background-color: #B4B4B3;
+    text-align: center;
+    padding: 20px;
+    border-radius :10px; 
+
+}
+.section-form h2{
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: #26577C;
+}
+
+.section-form form input{
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    height: 40px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    font-family: 'Oswald', sans-serif;
+    outline: 0;
+    border-radius: 5px;
+    
+
+}
+.section-form form input[type="submit"]{
+font-size: 25px;
+text-transform: uppercase;
+height: auto;
+cursor: pointer;
+color: #26577C;
+font-weight: bold;
+}
+.section-form form input[type="submit"]:hover{
+opacity: 0.8;
+}
+nav ul#userInfo{
+    display: none;
+}
+
+/* ================products=========== */
+.products{
+    width: 60%;
+    margin: 10px 0;
+}
+.product-item{
+    display: flex;
+    width: 100%;
+    border: 1.5px solid #B4B4B3;
+    margin-bottom: 10px;
+}
+.product-item-actions{
+    flex: 1;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.product-item-img{
+width: 30%;
+margin-right: 20px;
+height: 170px;
+}
+.product-item-desc a{
+    display: block;
+    font-size: 32px;
+    color: #060439;
+    text-transform: capitalize;
+    text-decoration: none;
+    cursor: pointer;
+}
+.add-to-cart{
+    display: block;
+    margin-left: auto;
+    background: #1c89dd;
+    color: #fff;
+    border: 0;
+    padding: 10px 5px;
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif ;
+    cursor: pointer;
+    
+    
+
+}
+.favorite{
+display: block;
+cursor: pointer;
+width: 20px;
+margin-left: auto;
+}
+
+
+.item-detials img{
+    
+    border: 1px solid #333;
+    margin: 10px 0;
+    padding: 2px;
+    object-fit: cover;
+    height: 400px;
+}
+#search{
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    padding: 5px;
+    display: block;
+    border: 1px solid #1c89dd;
+    font-size: 15px;
+    border-radius: 5px;
+    font-family: 'Oswald', sans-serif ;
+
+}
+.createProductIcon{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    color: #1c89dd;
+      
+}
+.createProductIcon:hover{
+    opacity: 0.8;
+}
+.editProduct{
+    display: block;
+    width: 140px;
+    border: none;
+    background-color: #1c89dd;
+    color: #fff;
+    padding: 5px 15px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+.item-qty{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #060439;
+    color: #fff;
+    font-size: 10px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 15px;
+}
+.user-avatar{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    margin: 10px 0;
+    
+
+}
+.editProfile{
+    display: block;
+    width: 140px;
+    border: none;
+    background-color: #1c89dd;
+    color: #fff;
+    padding: 5px 15px;
+    cursor: pointer;
+    margin: 5px 0;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif ;
+}
+#edit-profile-form input{
+    width: 100%;
+    display: block;
+     margin: 10px 0;
+     height: 40px;
+}
+#edit-profile-form input[type='submit']{
+    background-color: #1c89dd;
+    color: #fff;
+    cursor: pointer;
+    border: 0px;
+}
+#en-lang,#ar-lang{
+    color: #fff;
+    cursor: pointer;
+}
+
+.profile-photo {
+    position: relative;
+    display: inline-block;
+}
+
+
+.change-photo-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #1c89dd;
+    color: #fff;
+    padding: 10px ;
+    cursor: pointer;
+    border: 1px solid #1c89dd;
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    align-items: center;
+    font-size: 26px;
+
+}
+
+/* Styles for the camera icon */
+/* .fa-camera:before {
+    content: "\f030";
+    font-family: FontAwesome;
+} */

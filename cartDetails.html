@@ -1,0 +1,84 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping cart | Cart Details page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-rtl.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+ 
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <a href="index.html" class="brand">Shopping Cart</a>
+          <nav>
+            <ul id="links">
+              <li><a href="login.html">Sign in</a></li>
+              <li><a href="register.html">Sign up</a></li>
+            </ul>
+            <ul id="userInfo">
+              <li id="en-lang">En</li>
+              <li id="ar-lang">Ar</li>
+              <li>
+                <a href="profile.html" id="user"></a>
+              </li>
+              <li>
+                <a href="favorites.html">Favorites</a>
+
+              </li>
+              <li>
+                <a href="myProducts.html">My Products</a>
+
+              </li>
+              <li class="shopping-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="badge"></span>
+                <div class="cartsProducts">
+                  <div></div>
+                  <a href="cartProducts.html">view all products</a>
+                </div>
+              </li>
+
+              <li><a href="#" id="logOut">Logout</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="home">
+      <div class="container">
+        <div class="item-detials">
+            <!-- <img src="images/airpods.jpeg" alt="airpods">
+            <h2>title</h2> -->
+
+            
+        </div>
+        <div class="products"></div>
+        <div class="noProducts"></div>
+      </div>
+      <a href="createProduct.html" class="createProductIcon">
+        <i class="fa-solid fa-circle-plus fa-2xl"></i></a>
+    </section>
+    <script src="js/user.js"></script>
+    <script src="js/langDir.js"></script>
+    <script src="js/cartMenu.js"></script>
+
+    <script src="js/cartDetails.js"></script>
+    
+
+    
+    
+  </body>
+</html>
